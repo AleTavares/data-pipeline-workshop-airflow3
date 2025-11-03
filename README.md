@@ -63,7 +63,7 @@ Compreender conceitos de pipelines de dados automatizados, abordagens ETL e ELT,
 
 ### Laboratório Prático
 - **Setup do ambiente** - Configuração do Docker, Airflow 3 e PostgreSQL para execução do pipeline
-- **Criação de pipeline ETL com Airflow** - Desenvolvimento hands-on de DAG completa com extração de CSV, transformação de dados e carregamento no PostgreSQL
+- **Criação de pipeline ETL com Airflow** - Desenvolvimento hands-on de DAG completa com extração de CSV, transformação de dados e carregamento no PostgreSQL;
 
 ### Discussão e Conclusão
 - **Revisão do pipeline criado** - Análise do código desenvolvido, benefícios da automação e conceitos de DataOps
