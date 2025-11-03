@@ -48,7 +48,7 @@ Compreender conceitos de pipelines de dados automatizados, abordagens ETL e ELT,
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## Estrutura da Aula (3 horas)
+## Estrutura da Aula
 
 ### Conceitos
 - **O que são Pipelines de Dados?** - Definição, propósito, componentes típicos (ingestão, transformação, carregamento, orquestração) e importância em ambientes de dados modernos
@@ -124,7 +124,7 @@ A DAG `etl_vendas_pipeline` executa:
 
 **Ver logs:**
 ```bash
-docker compose logs -f airflow-webserver
+docker compose logs -f airflow-standalone
 ```
 
 **Parar serviços:**

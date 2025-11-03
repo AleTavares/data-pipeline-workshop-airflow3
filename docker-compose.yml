@@ -4,7 +4,7 @@ services:
     image: airflow3-custom:latest
     user: root
     ports:
-      - "8080:8080"
+      - "5000:8080"
     environment:
       AIRFLOW__CORE__LOAD_EXAMPLES: 'False'
       AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
