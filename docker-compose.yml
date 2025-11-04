@@ -10,6 +10,7 @@ services:
       AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
       AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_SECRET_KEY}
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:postgres@postgres_erp:5432/northwind
+      AIRFLOW__CONN__POSTGRES_DEFAULT: postgresql://postgres:postgres@postgres_erp:5432/northwind
     volumes:
       - ./dags:/opt/airflow/dags
       - ./logs:/opt/airflow/logs
@@ -43,8 +44,6 @@ services:
       - plataform-network
 volumes:
   postgres_data:
-  pgdata:
-    driver: local
 
 networks:
   plataform-network:
