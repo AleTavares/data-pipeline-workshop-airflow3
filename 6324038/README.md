@@ -256,6 +256,3 @@ CREATE TABLE relatorio_vendas (
 
 ---
 
-**Status: ✅ EXERCÍCIO FINAL COMPLETO E FUNCIONANDO**
-
-*Pipeline ETL implementado seguindo todas as especificações do exercício, com 110 pontos (100 + 10 bônus) alcançados.*
