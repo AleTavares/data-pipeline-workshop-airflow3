@@ -1,0 +1,34 @@
+{
+  "vendas_por_categoria": [
+    {
+      "Categoria": "Eletr\u00f4nicos",
+      "Receita_Total": 12450.0
+    },
+    {
+      "Categoria": "Acess\u00f3rios",
+      "Receita_Total": 866.5
+    }
+  ],
+  "produto_mais_vendido": [
+    {
+      "Nome_Produto": "Mouse Logitech",
+      "Quantidade_Vendida": 15
+    }
+  ],
+  "canal_maior_receita": [
+    {
+      "Canal_Venda": "Online",
+      "Receita_Total": 12450.0
+    }
+  ],
+  "margem_media_por_categoria": [
+    {
+      "Categoria": "Acess\u00f3rios",
+      "Margem_Lucro": 11.575
+    },
+    {
+      "Categoria": "Eletr\u00f4nicos",
+      "Margem_Lucro": 516.6666666666666
+    }
+  ]
+}

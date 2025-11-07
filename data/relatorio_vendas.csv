@@ -1,0 +1,6 @@
+ID_Venda,Nome_Produto,Categoria,Quantidade_Vendida,Receita_Total,Margem_Lucro,Canal_Venda,Mes_Venda
+V001,Notebook Dell,Eletrônicos,2,6400.0,700.0,Online,2024-01
+V002,Mouse Logitech,Acessórios,5,275.0,9.5,Loja Física,2024-01
+V003,Notebook Dell,Eletrônicos,1,3200.0,700.0,Online,2024-01
+V004,"Monitor 24""",Eletrônicos,3,2850.0,150.0,Online,2024-01
+V005,Mouse Logitech,Acessórios,10,591.5,13.649999999999999,Loja Física,2024-01

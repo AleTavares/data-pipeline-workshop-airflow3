@@ -1,4 +1,30 @@
+version: "3.9"
+
 services:
+  airflow-init:
+    image: apache/airflow:2.10.2
+    entrypoint: /bin/bash
+    command: -c "airflow db init && airflow users create \
+      --username admin \
+      --password admin \
+      --firstname Admin \
+      --lastname User \
+      --role Admin \
+      --email admin@example.com"
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'False'
+      AIRFLOW__CORE__FERNET_KEY: ${AIRFLOW_FERNET_KEY}
+      AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_SECRET_KEY}
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://postgres:postgres@postgres_erp:5432/northwind
+    depends_on:
+      - postgres_erp
+    networks:
+      - plataform-network
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+
   airflow-standalone:
     build: .
     image: airflow3-custom:latest
@@ -16,6 +42,9 @@ services:
       - ./plugins:/opt/airflow/plugins
       - ./data:/opt/airflow/data:rw
     command: airflow standalone
+    depends_on:
+      - airflow-init
+      - postgres_erp
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
       interval: 30s
@@ -34,13 +63,14 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_INITDB_ARGS: "--encoding=UTF8 --lc-collate=C --lc-ctype=C"
-    volumes:                  
+    volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./db:/docker-entrypoint-initdb.d
     ports:
-      - 2001:5432
+      - "2001:5432"
     networks:
       - plataform-network
+
 volumes:
   postgres_data:
   pgdata:
