@@ -15,6 +15,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./plugins:/opt/airflow/plugins
       - ./data:/opt/airflow/data:rw
+      - ./6324649:/opt/airflow/dags/6324649
     command: airflow standalone
     healthcheck:
       test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
