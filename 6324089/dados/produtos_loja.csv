@@ -1,0 +1,6 @@
+ID_Produto,Nome_Produto,Categoria,Preco_Custo,Fornecedor,Status
+P001,Notebook Dell,Eletrônicos,2500.00,Dell Inc,Ativo
+P002,Mouse Logitech,Acessórios,45.50,Logitech,Ativo
+P003,Teclado Mecânico,Acessórios,,Razer,Inativo
+P004,Monitor 24",Eletrônicos,800.00,Samsung,Ativo
+P005,Webcam HD,Acessórios,120.00,,Ativo
