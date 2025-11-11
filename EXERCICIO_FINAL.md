@@ -192,7 +192,7 @@ Implemente uma tarefa adicional que:
 ### Estrutura Esperada
 ```
 data-pipeline-workshop-airflow3/
-├── [SEU_RA]/
+├── [6324073]/
 │   ├── pipeline_produtos_vendas.py
 │   ├── README.md
 │   └── dados/ (se necessário)

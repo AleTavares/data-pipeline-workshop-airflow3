@@ -1,0 +1,6 @@
+ID_Venda,ID_Produto,Quantidade_Vendida,Preco_Venda,Data_Venda,Canal_Venda
+V001,P001,2,3200.00,2024-01-15,Online
+V002,P002,5,55.00,2024-01-15,Loja Física
+V003,P001,1,3200.00,2024-01-16,Online
+V004,P004,3,950.00,2024-01-16,Online
+V005,P002,10,,2024-01-17,Loja Física
